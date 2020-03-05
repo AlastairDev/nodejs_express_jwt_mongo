@@ -5,7 +5,7 @@ const envp = require('./envp')
 
 const mongoose = require('mongoose')
 
-mongoose.connect(env.DATABASE_URL, {
+mongoose.connect(envp.DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, () => {
